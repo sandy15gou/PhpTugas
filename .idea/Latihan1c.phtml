@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Kotak</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(3, 50px);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+
+        .box1 { grid-column: 1 / 2; grid-row: 1 / 2; }
+        .box2 { grid-column: 1 / 2; grid-row: 2 / 3; }
+        .box3 { grid-column: 2 / 3; grid-row: 2 / 3; }
+        .box4 { grid-column: 1 / 2; grid-row: 3 / 4; }
+        .box5 { grid-column: 2 / 3; grid-row: 3 / 4; }
+        .box6 { grid-column: 3 / 4; grid-row: 3 / 4; }
+    </style>
+</head>
+<body>
+
+<?php
+// Variabel untuk huruf di dalam kotak
+$A = 'A';
+$B = 'B';
+$C = 'C';
+?>
+
+<div class="container">
+    <div class="box box1"><?php echo $A; ?></div>
+    <div class="box box2"><?php echo $A; ?></div>
+    <div class="box box3"><?php echo $B; ?></div>
+    <div class="box box4"><?php echo $A; ?></div>
+    <div class="box box5"><?php echo $B; ?></div>
+    <div class="box box6"><?php echo $C; ?></div>
+</div>
+
+</body>
+</html>
